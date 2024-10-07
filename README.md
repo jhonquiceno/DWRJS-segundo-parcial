@@ -23,7 +23,9 @@ el sitio se tiene que visualizar como en el siguiente video:
 
 
 
-https://github.com/jhonquiceno/DWRJ-segundo-parcial/assets/15352519/2e5ae37e-801e-44ec-8b94-ac281565ddb6
+https://github.com/user-attachments/assets/46777e71-a9b6-4862-b72d-39bae00f3d35
+
+
 
 
 
