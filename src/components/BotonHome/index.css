@@ -1,0 +1,15 @@
+.boton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.iconHome {
+  height: 30px;
+  width: 30px;
+  margin-top: -5px;
+}

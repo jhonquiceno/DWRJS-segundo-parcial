@@ -1,13 +1,35 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import { PlatoProvider } from "./context/platoCtx";
+import { FilterProvider } from "./context/filtroCtx";
+
+import ListaPrincipal from "./pages/ListaPrincipal/listaPrincipal";
+import DetallePlato from "./pages/DetallePlato/detallePlato";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <ListaPrincipal />,
+  },
+  {
+    path: "/detail/:idPlato",
+    element: <DetallePlato />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <PlatoProvider>
+      <FilterProvider>
+        <RouterProvider router={router} />
+      </FilterProvider>
+    </PlatoProvider>
   </React.StrictMode>
 );
 
